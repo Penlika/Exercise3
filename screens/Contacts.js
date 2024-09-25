@@ -17,7 +17,7 @@ const Contact=({navigation})=>{
             setError(false)
         })
         .catch(()=>{
-            console.log(e)
+            // console.log(e)
             setLoading(false)
             setError(true)
 

@@ -24,8 +24,8 @@ const App =()=>{
         <View style={{flex:1}}>
           {/* <Contact></Contact> */}
           {/* <Profile></Profile> */}
-          {/* <BottomTabNavigator></BottomTabNavigator> */}
-          <TodoApp></TodoApp>
+          <BottomTabNavigator></BottomTabNavigator>
+          {/* <TodoApp></TodoApp> */}
         </View>
       </PaperProvider>
     </NavigationContainer>

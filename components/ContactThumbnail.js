@@ -13,8 +13,8 @@ const ContactThumbNail=({avatar,name,phone})=>{
 export default ContactThumbNail
 const myStyle=StyleSheet.create({
     container:{
-        flex:1,
-        backgroundColor:"aqua",
+        paddingVertical:30,
+        marginHorizontal:15,
         justifyContent:"center",
         alignItems:"center"
     }

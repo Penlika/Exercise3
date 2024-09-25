@@ -32,18 +32,24 @@ const TodoApp=()=>{
             console.log(todos)
         })
     },[cTodos])
-    const updateTodo=()=>{
-
+    const updateTodo=(item)=>{
+        cTodos.doc(item.id).update({
+            complete:!item.complete
+        })
+        .then(()=>console.log("update todo"))
+        .catch(e=>console.log(e))
     }
     const renderItem=({item})=>{
         return(
-            <Button icon={(item.complete)?"home":"star"} 
+            <Button icon={(item.complete)?"check":"star"} 
             style={{
                 alignItems:"flex-start"
             }}
             labelStyle={{
                 color:"black"
             }}
+
+            onPress={()=>updateTodo(item)}
             >{item.title}</Button>
         )
     }

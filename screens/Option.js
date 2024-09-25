@@ -1,11 +1,21 @@
-import { View } from "react-native"
-import { Text } from "react-native-paper"
+import { View, StyleSheet } from 'react-native';
+import DetailListItem from '../components/DetailListItem';
 
-const Option=()=>{
-    return(
-        <View style={{flex:1}}>
-            <Text>Option</Text>
-        </View>
-    )
-}
-export default Option
+const Option = () => {
+  return (
+    <View style={styles.container}>
+      <DetailListItem label="Update Profile" />
+      <DetailListItem label="Change Language" />
+      <DetailListItem label="Sign Out" />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+  }
+})
+
+export default Option;
